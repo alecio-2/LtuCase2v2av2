@@ -106,7 +106,7 @@ public class LtuCase2v2av2 {
             ObjectMapper objectMapper = new ObjectMapper();
             JsonNode jsonNode = objectMapper.readTree(jsonFile);
 
-            username = jsonNode.get("ltuCredentials").get("username").asText();
+            username = jsonNode.get("ltuCredentials").get("email").asText();
             password = jsonNode.get("ltuCredentials").get("password").asText();
 
             LOGGER.info("Json file is read");
@@ -225,7 +225,7 @@ public class LtuCase2v2av2 {
             ObjectMapper objectMapper = new ObjectMapper();
             JsonNode jsonNode = objectMapper.readTree(jsonFile);
 
-            username = jsonNode.get("ltuCredentials").get("username").asText();
+            username = jsonNode.get("ltuCredentials").get("email").asText();
             password = jsonNode.get("ltuCredentials").get("password").asText();
 
             LOGGER.info("Json file is read");
